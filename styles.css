@@ -1,12 +1,21 @@
 body {
     display:flex;
     flex-flow: column wrap;
+    min-width: 960px;
+    max-width: 1200px;
+    margin: 0 auto; /* this was important to figure out*/
 }
+.header, .one, .two, .three { /*Extends the background color of each flexbox row to the full edges of the main body container*/
+    margin: 0 -9999rem;
+    padding: 0 9999rem;
+}
+
 
 .header {
     display:flex;
     background-color: #1f2937;
     color: white;
+    font-family: Hero;
     align-items: center;
 }
 
@@ -27,3 +36,24 @@ ul {
 li{
     display:inline;
 }
+
+.one, .one-left, .one-right {
+    display:flex;
+    background-color: #1f2937;
+    color: white;
+}
+
+.one-left, .one-right {
+    flex-flow: column nowrap;
+    gap: 40px;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.left-header{
+    font-size: 30px
+}
+ 
