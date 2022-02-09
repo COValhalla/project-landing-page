@@ -5,9 +5,9 @@ body {
     max-width: 1200px;
     margin: 0 auto; /* this was important to figure out*/
 }
-.header, .one, .two, .three { /*Extends the background color of each flexbox row to the full edges of the main body container*/
+.header, .one, .two, .three{ /*Extends the background color of each flexbox row to the full edges of the main body container*/
     margin: 0 -9999rem;
-    padding: 12px 9999rem;
+    padding: 24px 9999rem;
 }
 
 
@@ -66,8 +66,10 @@ h1{
     font-size: 30px
 }
 
-.one-right img{
+img{
     max-width: 430px;
+    border-radius: 12px;
+    border: 5px solid #3882f6;
 }
 
 button{
@@ -78,4 +80,77 @@ button{
     border-radius: 12px;
     border: none;
 }
+
+h2 {
+    font-size: 38px;
+    font-weight: bolder;
+    color: 1F2937;
+}
+.two{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.two-row{
+    display: flex;
+}
+
+.two-column{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content:space-between;
+}
+.two-column p {
+    max-width: 200px;
+}
+
+.three {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: #E5E7EB;
+}
  
+.quote p {
+    font-size: 38px;
+    color: #1F2937;
+    font-style: italic;
+}
+
+.quote-source {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+}
+.four{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 24px;
+    
+}
+.four-sub-box{
+    display:flex;
+    flex-direction: column nowrap;
+    background-color: #3882F6;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    min-width: 600px;
+    min-height: 100px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.final {
+    border: 1px solid white;
+}
+.four-inside{
+    color: white;
+}
+p .cta{
+    font-size: 24px;
+    font-weight: bold;
+}
