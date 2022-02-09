@@ -7,7 +7,7 @@ body {
 }
 .header, .one, .two, .three { /*Extends the background color of each flexbox row to the full edges of the main body container*/
     margin: 0 -9999rem;
-    padding: 0 9999rem;
+    padding: 12px 9999rem;
 }
 
 
@@ -25,12 +25,14 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
+    color: #e5e7eb;
+    font-size: 18px;
 }
 
 ul {
     list-style-type: none;
-    
+    display: flex;
+    gap: 30px;
 }
 
 li{
@@ -40,12 +42,19 @@ li{
 .one, .one-left, .one-right {
     display:flex;
     background-color: #1f2937;
-    color: white;
+    color: white;  
+}
+.one{
+    justify-content: space-around;
 }
 
+.one-left{
+    margin-right: auto;
+    max-width: 500px;
+}
 .one-left, .one-right {
     flex-flow: column nowrap;
-    gap: 40px;
+    justify-content: center;
 }
 
 h1{
@@ -55,5 +64,18 @@ h1{
 
 .left-header{
     font-size: 30px
+}
+
+.one-right img{
+    max-width: 430px;
+}
+
+button{
+    min-height: 30px;
+    max-width: 100px;
+    background-color: #3882F6;
+    color: white;
+    border-radius: 12px;
+    border: none;
 }
  
